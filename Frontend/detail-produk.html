@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detail Produk | Siruwa Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detail_produk.css">
+
+    <!-- JavaScript cukup dipanggil satu kali -->
+    <script src="js/detail-produk.js" defer></script>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <nav class="navbar">
+
+        <a href="Beranda.php" class="logo">
+            Siruwa<span>.</span>
+        </a>
+
+        <ul class="nav-menu">
+            <li>
+                <a href="Beranda.php">Beranda</a>
+            </li>
+
+            <li>
+                <a href="Beranda.php#produk">Produk</a>
+            </li>
+
+            <li>
+                <a href="Beranda.php#tentang">Tentang Kami</a>
+            </li>
+        </ul>
+
+        <div class="nav-buttons">
+
+            <a href="keranjang.php" class="cart">
+                🛒 Keranjang
+            </a>
+
+            <a href="profil.php" class="login-btn">
+                Profil Saya
+            </a>
+
+        </div>
+
+    </nav>
+</header>
+
+
+<!-- DETAIL PRODUK -->
+
+<main class="detail-container">
+
+    <a href="Beranda.php#produk" class="back-link">
+        ← Kembali ke Produk
+    </a>
+
+    <section class="detail-content">
+
+        <!-- GAMBAR PRODUK -->
+
+      <div class="detail-image">
+    <img
+        id="gambar-produk"
+        alt="Foto produk Siruwa"
+    >
+</div>
+
+        </div>
+
+
+        <!-- INFORMASI PRODUK -->
+
+        <div class="detail-info">
+
+            <span class="product-label">
+                OLEH-OLEH KHAS MINANG
+            </span>
+
+            <h1 id="nama-produk"></h1>
+
+            <h2 id="harga-produk"></h2>
+
+            <p id="deskripsi-produk"></p>
+
+
+            <!-- JUMLAH PRODUK -->
+
+            <div class="quantity-control">
+
+                <label for="jumlah">
+                    Jumlah:
+                </label>
+
+                <div class="quantity">
+
+                    <button type="button" id="kurang">
+                        −
+                    </button>
+
+                    <input
+                        type="number"
+                        id="jumlah"
+                        value="1"
+                        min="1"
+                    >
+
+                    <button type="button" id="tambah">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- TOMBOL KERANJANG -->
+
+            <button
+                type="button"
+                class="add-cart-btn"
+                id="tambahKeranjang"
+            >
+                Tambah ke Keranjang
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>Siruwa<span>Store</span>.</h2>
+
+    <p>
+        Melestarikan cita rasa dan budaya Minangkabau.
+    </p>
+
+    <p class="copyright">
+        &copy; 2026 Siruwa Store. All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>

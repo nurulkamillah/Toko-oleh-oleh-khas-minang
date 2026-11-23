@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fffaf4;
+    color: #29221e;
+}
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.logo {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: #831c22;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.logo span {
+    color: #d99a37;
+}
+
+.auth-card h1 {
+    text-align: center;
+    font-size: 27px;
+    color: #321c19;
+    margin-bottom: 10px;
+}
+
+.description {
+    text-align: center;
+    font-size: 13px;
+    color: #81736c;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd2c8;
+    border-radius: 7px;
+    outline: none;
+    font-size: 13px;
+}
+
+.form-group input:focus {
+    border-color: #8b2026;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 13px;
+    background: #8b2026;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-btn:hover {
+    background: #641419;
+}
+
+.register-text {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+.register-text a {
+    color: #9b252b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: #81736c;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 25px;
+    }
+}
